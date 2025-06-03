@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    /* height: 100vh;
+    width: 100vw;  */
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h4,
+h5 {
+    font-size: 2.8rem;
+}
+
+li {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.Main-head {
+    background: #5e7669;
+    color: #ffffff;
+    /* max-height: 10%; */
+}
+
+nav {
+    min-height: 10vh;
+    /* max-height: 10%; */
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#logo {
+    flex: 2 1 40rem;
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+}
+
+.hero {
+    min-height: 90vh ;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), transparent), url("images/aaron-burden-QJDzYT_K8Xg-unsplash.jpg");
+    background-size: cover;
+    background-position: bottom;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero h3 {
+    padding: 4rem;
+}
+
+.button1 a {
+    padding: 15px 30px;
+    background: #04662d;
+    margin: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+}
+
+.button1 a:hover {
+    background: #09ee68;
+    color: black;
+}
+
+.btns {
+    justify-content: center;
+    padding: 30px 30px;
+    margin-top: 6px;
+}
+
+input[type=submit],
+input[type=reset] {
+    margin-top: 15px;
+    background: #17a2b8;
+    color: white;
+    border: 1px solid #17a2b8;
+    cursor: pointer;
+}
+
+.unit {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    bottom: 20px;
+}
+
+.corps {
+    background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1740&q=80');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: large;
+    font-weight: 600;
+    background-size: cover;
+}
+
+.titre {
+    text-align: center;
+    font-size: 20px;
+}
+
+hr {
+    margin: 10px 0;
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    width: 100%;
+}
+
+a p {
+    color: purple;
+}
+
+.name-field {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.name-field div {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: large;
+}
+
+input {
+    margin-bottom: 5px;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+input:focus {
+    border: 1px solid #17a2b8;
+}
+
+p {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+p a {
+    text-decoration: 0;
+    color: #17a2b8;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+#photo {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    left: 20px;
+}
+
+nav img {
+    width: 100%;
+    height: 90%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #e3f9ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+    cursor: default;
+}
+
+form input.equal {
+    width: 145px;
+    color: #33ffd8;
+}
+
+form input.operator {
+    color: #33ffd8;
+}
+
+#math {
+    padding: 20px;
+    font-size: 45px;
+    position: absolute;
+    left: 50px;
+}
+
+/* La partie CSS du Bulletin*/
+.porteur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: bottom;
+}
+
+table {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    width: 900px;
+    height: 100px;
+    font-size: large;
+    outline:none;
+    border-collapse: collapse;
+    position: relative;
+    bottom: 55px;
+}
+
+th {
+    border: 2px solid black ;
+    padding: 10px;
+    margin: 2px;
+    width: 100px;
+    color: black;
+    outline: none;
+}
+
+td {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 2px;
+    width: 50px;
+    text-align: center;
+    background-color: #ffffff;
+    outline: none;
+}
+
+input[type="number"] {
+    text-align:center;
+    width: 200px;
+    font-size: 20px;
+    outline: none;
+}
+
+.titre {
+    position: relative;
+    top: 5px;
+    font-size: large;
+    font-weight: 700;
+}
+
+hr {
+    position: relative;
+    top: 5px;
+    border: 1px solid black;
+}
+
+#download {
+    padding: 15px 30px;
+    background: #de9b0b;
+    margin: 3px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 200;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    position: relative;
+    left: 400pt;
+    bottom: 25px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.champ {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.champ div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    position: relative;
+    bottom: 20px;
+}
+
+.login {
+    background-color: rgb(22, 157, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: large;
+    font-weight: 600;
+    background-size: cover;
+}
+div p {
+    color: red;
+    font-size: small;
+    text-align:left ;
+    font-weight: 100;
+}
+.hide{
+    color: #08833b;
+    font-size: small;
+}
+.appear{
+    color: red;
+    font-size: small;
+    font-weight: 200;
+    display: none;
+}
+
+.error{
+    border-color: rgb(225, 11, 11);
+}
+
+.carré{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+.navigateur{
+    background: green;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-around;
+    list-style: none;
+}
+.navigateur div{
+    color: #ffffff;
+    font-size: medium;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px;
+}
+.div1{
+    margin: 30px;
+    padding: 10px;
+    background-color:#ffffffc9;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+}
+#name,#cm{
+    font-size: medium;
+    font-weight: 300;
+    color: black;
+    position: relative;
+    right: 250px;
+    top: 15px;
+}
+.info2{
+    font-size: medium;
+    font-weight: 300;
+    color: black;
+    position: relative;
+    left: 250px;
+    bottom: 55px;
+}
+#log:hover{
+    cursor: pointer;
+    color: #3a4452;
+}
+.nav a:hover{
+    cursor: pointer;
+    color: #3a4452;
+}
+

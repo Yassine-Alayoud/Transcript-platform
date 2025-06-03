@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/picture_as_pdf.png" type="images/png">
+  <link rel="stylesheet" href="Bulletin.css">
+  <title>Relevé de notes</title>
+  <script src="Controle.js"></script>
+  <!-- html2pdf.js CDN -->
+  <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+</head>
+<body onload="aff_bul();">
+  <div class="container" id="bulletin">
+    <h2>Relevé de Notes</h2>
+    <div class="info">
+      <p id="name"><strong>Nom complet d'étudiant :</strong> </p>
+      <p id="cm"><strong>CNE :</strong> </p>
+      <p><strong>Institut :</strong> école supérieure de technologie Agadir</p>
+      <p><strong>Année Scolaire :</strong> 2022/2023</p>
+    </div>
+
+    <table>
+      <tr>
+        <th>Module</th>
+        <th>Élément</th>
+        <th>Note d'élément</th>
+        <th>Note du module</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Algo / C</td>
+        <td>Algorithmique</td>
+        <td id="matiere1"></td>
+        <td rowspan="2" id="module1"></td>
+      </tr>
+      <tr>
+        <td>Langage C</td>
+        <td id="matiere2"></td>
+      </tr>
+      <tr>
+        <td rowspan="2">Circuit / Archi</td>
+        <td>Circuit Logique</td>
+        <td id="matiere3"></td>
+        <td rowspan="2" id="module2"></td>
+      </tr>
+      <tr>
+        <td>Architecture des ordinateurs</td>
+        <td id="matiere4"></td>
+      </tr>
+      <tr>
+        <td rowspan="2">Math</td>
+        <td>Algèbre</td>
+        <td id="matiere5"></td>
+        <td rowspan="2" id="module3"></td>
+      </tr>
+      <tr>
+        <td>Analyse</td>
+        <td id="matiere6"></td>
+      </tr>
+      <tr>
+        <td rowspan="3">Français / T.C / Anglais</td>
+        <td>Français</td>
+        <td id="matiere7"></td>
+        <td rowspan="3" id="module4"></td>
+      </tr>
+      <tr>
+        <td>Techniques de communication</td>
+        <td id="matiere8"></td>
+      </tr>
+      <tr>
+        <td>Anglais</td>
+        <td id="matiere9"></td>
+      </tr>
+      <tr>
+        <td colspan="3"><strong>Moyenne Générale</strong></td>
+        <td><strong id="moy_gen"></strong></td>
+      </tr>
+    </table>
+  </div>
+    <div class="btn">
+        <button class="no-print" onclick="generatePDF()">Convertir Bulletin en PDF</button>
+    </div>
+</body>
+</html>

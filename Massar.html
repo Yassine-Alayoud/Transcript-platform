@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/close-up-hands-holding-diplomas-caps.jpg" type="images/png" />
+    <title> Massar </title>
+</head>
+<body class="porteur">
+    <div class="navigateur">
+        <div class="nav" id="btn"> <a href="Bulletin_notes.html" target="_blank" onclick="ClickEvent();">Telecharger Votre Bulletin</a> </div>
+        <div class="nav"> <a href="Calculatrice.html" target="_blank">Calculatrice</a> </div>
+        <div id="log" onclick="logOut();"> Se déconnecter </div>
+    </div>
+    <div class="carré">
+        <div class="div1">
+        <h4 class="titre"> Les informations personnels </h4>
+        <hr>
+        <br>
+        <div>
+            <label> Nom </label>
+            <input type="text" id="n1" name="nom" required />
+        </div>
+        <div>
+            <label> Prenom </label>
+            <input type="text" id="n2" name="prenom" required />
+        </div>
+        <div>
+            <label> Code Massar (CNE) </label>
+            <input type="text" id="n3" name="cne" required />
+        </div>
+        <p id="inv_info"></p>
+        </div>
+       <div class="div1">
+        <h4 class="titre"> Les notes des elements</h4>
+        <hr>
+        <br>
+        <div>
+            <label> Algorithmique </label>
+            <input type="number" id="note1" name="Algorithmique" step="any" onkeyup="focusInput(1);"/>
+        </div>
+        <div>
+            <label> Langage C </label>
+            <input type="number" id="note2" name="Langage" step="any" onkeyup="focusInput(2);"/>
+        </div>
+        <div>
+            <label> Circuit logique </label>
+            <input type="number" id="note3" name="cir.log" step="any" onkeyup="focusInput(3);"/>
+        </div>
+        <div>
+            <label> Architecture des ordinateurs </label>
+            <input type="number" id="note4" name="Archi.ord" step="any" onkeyup="focusInput(4);"/>
+        </div>
+        <div>
+            <label> Algébre </label>
+            <input type="number" id="note5" name="algebre" step="any" onkeyup="focusInput(5);"/>
+        </div>
+        <div>
+            <label> Analyse </label>
+            <input type="number" id="note6" name="analyse" step="any" onkeyup="focusInput(6);"/>
+        </div>
+        <div>
+            <label> Français </label>
+            <input type="number" id="note7" name="francais" step="any" onkeyup="focusInput(7);"/>
+        </div>
+        <div>
+            <label> Techniques de communication </label>
+            <input type="number" id="note8" name="communication" step="any" onkeyup="focusInput(8);"/>
+        </div>
+        <div>
+            <label> Anglais </label>
+            <input type="number" id="note9" name="anglais" step="any"/>
+        </div>
+        <p id="inv_note"></p>
+       </div>
+    </div>
+    <script src="Controle.js"></script>
+</body>
+</html>

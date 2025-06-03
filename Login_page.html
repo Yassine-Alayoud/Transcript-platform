@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - EST Agadir</title>
+  <link rel="shortcut icon" href="images/icon.jpg" type="images/jpg" />
+  <link rel="stylesheet" href="Login.css">
+  <script src="Controle.js"></script>
+</head>
+<body>
+
+  <div class="login-container">
+    <img src="images/ESTA_logo.jpg" alt="Logo EST Agadir" class="logo">
+    <h2>Login</h2>
+    <form action="Massar.html" method="post" id="num1">
+      <label for="email">Adresse Email</label>
+      <input type="email" id="self1" name="email" placeholder="Entrez votre email" required onkeyup="hideError();">
+
+      <label for="password">Mot de passe</label>
+      <input type="password" id="self2" name="mot_passe" placeholder="Entrez votre mot de passe" required onkeyup="hideError();">
+
+      <p id="para" class="appear"></p>
+      <button type="submit" class="btn btn-login" onclick="checkData();">Se connecter</button>
+      <button type="reset" class="btn btn-cancel">Annuler</button>
+    </form>
+
+    <div class="footer">
+      <p>Vous n'avez pas encore un compte ? <a href="Sign_up_page.html">S'inscrire</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
