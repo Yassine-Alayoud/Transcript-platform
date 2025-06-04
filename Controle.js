@@ -189,9 +189,11 @@ function validInfo(){
     let nom = document.getElementById('n1').value;
     let prenom = document.getElementById('n2').value;
     let cne = document.getElementById('n3').value;
+    let annee = document.getElementById('n4').value;
     let a = 0;
-    if(nom.match(/^[a-z A-Z]{1,}$/) && prenom.match(/^[a-z A-Z]{1,}$/) && cne.match(/^[A-Z][0-9]{9}$/)){
-         a++;
+    if(nom.match(/^[a-z A-Z]{1,}$/) && prenom.match(/^[a-z A-Z]{1,}$/) && cne.match(/^[A-Z][0-9]{9}$/) 
+            && annee.match(/^(19|20)\d{2}\/(19|20)\d{2}$/)){
+        a++;
     }
     return a;
 }
@@ -214,6 +216,7 @@ function save_bul(){
     let nom = document.getElementById('n1').value;
     let prenom = document.getElementById('n2').value;
     let code_massar = document.getElementById('n3').value;
+    let annee = document.getElementById('n4').value;
     let notes = [];
     for(let i=0;i<9;i++){
         notes[i]=document.getElementById('note'+(i+1)).value;
@@ -221,6 +224,7 @@ function save_bul(){
     let Données = {
         Full_name : `${prenom} ${nom}`,
         code : code_massar,
+        year : annee,
         elements : notes,
     };
     localStorage.setItem('Données',JSON.stringify(Données));
@@ -266,6 +270,7 @@ function aff_bul(){
     let donnée = JSON.parse(localStorage.Données);
     let name_complet = document.getElementById('name');
     let cne = document.getElementById('cm');
+    let annee = document.getElementById('annee');
     let moyenne = document.getElementById('moy_gen');
     let matieres = [];
     let modules = [];
@@ -276,6 +281,7 @@ function aff_bul(){
     }
     name_complet.innerHTML += donnée.Full_name;
     cne.innerHTML += donnée.code;
+    annee.innerHTML += donnée.year;
     for(let j=0;j<4;j++){
         modules[j] = document.getElementById('module'+(j+1));
     }
